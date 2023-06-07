@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-//const { should } = require('chai');
 
 describe('Pré cadastro', () => {
     const { faker } = require('@faker-js/faker');
@@ -28,7 +27,7 @@ describe('Pré cadastro', () => {
 
     });
 
-    it.only('Deve completar o cadastro de endereço', () => {
+    it('Deve completar o cadastro de endereço', () => {
         
 
         cy.get('#reg_email').type(faker.internet.email())
